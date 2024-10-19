@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+body{
+background-image: url(R.png);
+color:rgb(175, 174, 174);
+    margin: 0;
+    padding: 0;
+}
+#tasks-container{
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%, -50%);
+}
+#tasks-container h2{
+    font-size: 40px;
+    -webkit-text-stroke: 2px black;
+text-shadow: 3px 3px 5px black;
+    font-family:"Pixelify Sans", sans-serif;
+}
+/*formulario*/
+#add-task-form{
+    position: relative;
+}
+#task-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 15px;
+    width: 500px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Pixelify Sans', serif;  
+    font-size:20px ; 
+    outline: none; 
+}
+
+
+.btn1{
+    background-color:transparent;
+    border: none;
+    transition: .5s;
+}
+#add-task:hover{
+    color:rgb(255, 255, 107);
+}
+#add-btn:hover{
+    color:rgb(70, 255, 95)
+}
+#remove-btn:hover{
+    color:rgb(250, 71, 71)
+}
+.bi{
+    padding: 0 0 0 10px;
+    font-size: 1.7em;
+ 
+
+}
+.bi:active{
+    color:darkslategray;
+}
+
+h4{
+    -webkit-text-stroke: 2px black;
+    text-shadow: 3px 3px 5px black;
+    font-size: 35px;
+    margin-left: 10px;
+    font-family: 'Pixelify Sans', serif;  
+    
+}
+/*task container*/
+
+#task-list li{
+    margin-top: 15px;
+    list-style: none;
+    font-size: 29px;
+    -webkit-text-stroke: 1px black;
+    font-family:"Pixelify Sans", sans-serif;
+    padding: 0;
+    margin: 5px;
+    font-weight: bold;
+    line-height: 50px;
+    position: relative;
+    transition: .5s;
+    background-color: rgba(85, 39, 25, 0.753);
+    padding: 7px;
+    width: 460px;
+   
+}
+#add-btn, #remove-btn{
+    font-size: .6em;
+    -webkit-text-stroke: 0px;
+    position: absolute;
+    top:0;
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+}
+#add-btn{
+    right: 60px;
+}
+#remove-btn{
+    right: 20px;
+}
+.hide{
+    display:none;
+}
+
+#task-list li.done{
+    background-color: rgba(0, 128, 0, 0.767);
+}
